@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:textSize="18dp"
+            android:fontFamily="@font/poppins_semibold"/>
+
+        <!-- Hero Layout    -->
+        <LinearLayout
+            android:id='@+id/hero'
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/hero_background"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/profilepic" />
+
+            <!-- Profile Name Tag  -->
+            <LinearLayout
+                android:id="@+id/userProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Rafly Masloman"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="raflymasloman20@gmail.com"
+                    android:textColor="@color/gray_400"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <!--Social Media tag-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/circle_background"
+                    android:gravity="center"
+                    android:orientation="vertical"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/twitter" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:background="@drawable/circle_background"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/instagram" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/circle_background"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/facebook" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--Bio Layout-->
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titleBio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Bio"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+                <!--  Nim Tag -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Nim"
+                        android:textColor="@color/gray_400"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="H071191056"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/gray_200" />
+
+                <!--   Date of Birth tag  -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Date of Birth"
+                        android:textColor="@color/gray_400"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="Manado, 01-12-2000"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/gray_200" />
+
+                <!-- Motto Tag  -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Motto"
+                        android:textColor="@color/gray_400"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="Biyasalahh"
+                        android:textColor="@color/black"
+
+                        android:textSize="16dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/gray_200" />
+
+                <!--Phone Number Tag-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Phone Number"
+                        android:textColor="@color/gray_400"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="+6281342777362"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/gray_200" />
+
+
+            </LinearLayout>
+
+            <!--Skills Layout-->
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/titleSkills"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Skills"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <!-- Front End Skills -->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shadow_background"
+                    android:paddingRight="8dp"
+                    android:paddingLeft="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:elevation="8dp"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_centerVertical="true"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Front-End Developer"
+                            android:textSize="14dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Html, Css, Javasript"
+                            android:textSize="12dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/gray_400"/>
+
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="107dp"
+                        android:layout_height="76dp"
+                        android:src="@drawable/javascript"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+                <!-- UI Design Skills-->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shadow_background"
+                    android:paddingRight="8dp"
+                    android:paddingLeft="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:elevation="8dp"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_centerVertical="true"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="UI Design"
+                            android:textSize="14dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Figma, Adobe XD"
+                            android:textSize="12dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/gray_400"/>
+
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="107dp"
+                        android:layout_height="76dp"
+                        android:src="@drawable/uidesign"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+
+                <!-- Framework Skills -->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/shadow_background"
+                    android:paddingRight="8dp"
+                    android:paddingLeft="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center"
+                    android:elevation="8dp"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_centerVertical="true"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Framework Skills"
+                            android:textSize="14dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="React JS, Bootstrap"
+                            android:textSize="12dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/gray_400"/>
+
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="107dp"
+                        android:layout_height="76dp"
+                        android:src="@drawable/react"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- Button -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <!-- Go to Article Page button-->
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:text="Go to Articles"
+                    android:background="@drawable/button_first"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:onClick="articlePage"
+                    />
+                <!--Go to Home Page Button -->
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:text="Home"
+                    android:background="@drawable/button_second"
+                    android:onClick="backHome"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

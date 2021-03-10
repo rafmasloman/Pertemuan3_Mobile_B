@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity3"
+        android:background="@color/primary_dark"
+        android:padding="30dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true">
+
+            <ImageButton
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/back_icon"
+                android:background="@color/primary_dark"
+                android:onClick="backHome"
+                />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:src="@drawable/iphone_xr"
+                android:layout_marginTop="25dp"
+
+                />
+            <TextView
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:text="IPhone XR Masih Layak dibeli di Tahun 2021"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins_medium"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="By Gadgetren | 5 min read"
+                    android:textColor="@color/gray_400"
+                    android:fontFamily="@font/poppins_regular"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/gray_400"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Gravida sem sem est cursus
+            pellentesque vitae. Eleifend nam eros, pharetra
+            facilisis quis eget faucibus.  Tristique dolor
+            elementum, sagittis, volutpat senectus sit donec eleifend. Sed pretium vestibulum, volutpat vitae sit."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Gravida sem sem est cursus
+            pellentesque vitae. Eleifend nam eros, pharetra
+            facilisis quis eget faucibus.  Tristique dolor
+            elementum, sagittis, volutpat senectus sit donec eleifend. Sed pretium vestibulum, volutpat vitae sit."/>
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:text="Profile"
+                android:background="@drawable/button_first"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_semibold"
+                android:onClick="profilePage"
+                />
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Home"
+                android:background="@drawable/button_second"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_semibold"
+                android:onClick="backHome"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

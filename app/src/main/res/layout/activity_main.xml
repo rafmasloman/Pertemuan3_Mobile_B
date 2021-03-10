@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <!--Welcome Title-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp">
+        <TextView
+            android:id="@+id/welcomeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat Datang"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:fontFamily="@font/poppins_semibold"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="198dp"
+            android:text="Di sini kalian dapat melihat artikel-artikel terikini"
+            android:textColor="@color/gray_400"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_regular"/>
+    </LinearLayout>
+
+    <!-- Image Illustration -->
+
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="215dp"
+            android:src="@drawable/illustration"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"/>
+
+
+
+    <!--Button -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+
+        <!--Go to Article pack button-->
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="Go to Articles"
+            android:background="@drawable/button_first"
+            android:onClick="articlePage"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_semibold"
+            />
+        <!-- Go to Profile Page Button -->
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="Profile"
+            android:background="@drawable/button_second"
+            android:onClick="profilePage"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_semibold"
+            />
+    </LinearLayout>
+
+</LinearLayout>
